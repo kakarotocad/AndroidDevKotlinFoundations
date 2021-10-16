@@ -5,6 +5,14 @@ class Carro(
     var ano: Int,
     var modelo: String
 ){
+    init{
+        println("Contruindo um novo carro")
+    }
+
+    fun acelerar(){
+        println("Acelerando seu/sua $modelo")
+    }
+
     override fun toString(): String {
         return """
             Cor: $cor
@@ -20,4 +28,8 @@ fun main() {
     println("=====================")
     val mercedes = Carro("Preta", 2012, "Mercedes")
     println(mercedes)
+    uno.acelerar()
+    mercedes.acelerar()
+
+
 }
