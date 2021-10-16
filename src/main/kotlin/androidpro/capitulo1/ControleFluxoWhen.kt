@@ -17,7 +17,7 @@ fun main() {
     println("Enter operator either +, -, * or /")
     val operator = readLine()
     println("Entre com o valor 2: ")
-    val b = readLine()!!.toInt()
+    val b = readLine()!!.toDouble()
 
     when (operator) {
         "+" -> println("$a + $b = ${a + b}")
@@ -25,6 +25,19 @@ fun main() {
         "*" -> println("$a * $b = ${a * b}")
         "/" -> println("$a / $b = ${a / b}")
         else -> println("$operator is invalid")
+    }
+
+    println("===== Banking System =====")
+    var opcao: Int = 2
+
+    when(opcao){
+        1 -> println("Checking Account")
+        2 -> println("Saving Account")
+        3 -> println("Credit Card")
+        else ->{
+            println("Any valid option entered")
+            println("Please contact a clerk to further help")
+        }
     }
 
 }
