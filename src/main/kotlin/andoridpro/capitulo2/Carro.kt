@@ -4,17 +4,17 @@ class Carro(
     var cor: String,
     var ano: Int,
     var modelo: String
-) : Veiculo(cor = cor, ano = ano, modelo = modelo) {
+) : Veiculo(cor = cor, ano = ano, modelo = modelo), Dirigivel {
     init {
         println("Contruindo um novo carro")
     }
 
-    fun acelerar() {
-        println("Acelerando seu/sua $modelo")
-    }
-
     fun abrirPorta(){
         println("Abrindo a porta do Carro")
+    }
+
+    override fun acelerar(speed: Long) {
+        println("Acelerando seu $modelo a velocidade: $speed")
     }
 
     override fun toString(): String {

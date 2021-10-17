@@ -9,12 +9,12 @@ fun main() {
 
     val mercedes = Carro("Preta", 2012, "Mercedes")
     println(mercedes)
-    uno.acelerar()
-    mercedes.acelerar()
+    mercedes.acelerar(155)
+
+    println("======================")
 
     val scania = Caminhao("Preto", 2015, "Scania Optimus", 70000)
     println(scania)
-    scania.acelerar()
 
 
 

@@ -10,10 +10,6 @@ class Caminhao(
         println("Contruindo um novo carro")
     }
 
-    fun acelerar() {
-        println("Acelerando seu/sua $modelo")
-    }
-
     override fun toString(): String {
         return """
             Cor: $cor
