@@ -1,17 +1,16 @@
-package andoridpro.capitulo2
+package androidpro.capitulo2
 
-class Caminhao(
+class Carro(
     var cor: String,
     var ano: Int,
-    var modelo: String,
-    protected var capacidade: Long
-) : Veiculo(cor = cor, ano = ano, modelo = modelo), Carregavel, Dirigivel {
+    var modelo: String
+) : Veiculo(cor = cor, ano = ano, modelo = modelo), Dirigivel {
     init {
         println("Contruindo um novo carro")
     }
 
-    override fun carregar(quantidade: Int) {
-        println("O total de $quantidade kg foi carregado em seu Caminhão.")
+    fun abrirPorta(){
+        println("Abrindo a porta do Carro")
     }
 
     override fun acelerar(speed: Long) {
@@ -23,7 +22,6 @@ class Caminhao(
             Cor: $cor
             Ano: $ano
             Modelo: $modelo
-            Capacidade: $capacidade
         """.trimIndent()
     }
 }

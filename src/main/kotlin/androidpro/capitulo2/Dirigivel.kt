@@ -1,4 +1,4 @@
-package andoridpro.capitulo2
+package androidpro.capitulo2
 
 interface Dirigivel {
 
