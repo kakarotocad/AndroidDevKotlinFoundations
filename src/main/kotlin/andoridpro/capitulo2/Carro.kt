@@ -14,7 +14,7 @@ class Carro(
     }
 
     override fun acelerar(speed: Long) {
-        println("Acelerando seu $modelo a velocidade: $speed")
+        println("Acelerando seu $modelo a velocidade: $speed km/h")
     }
 
     override fun toString(): String {

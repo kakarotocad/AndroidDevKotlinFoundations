@@ -13,8 +13,10 @@ fun main() {
 
     println("======================")
 
-    val scania = Caminhao("Preto", 2015, "Scania Optimus", 70000)
+    val scania: Caminhao = Caminhao("Preto", 2015, "Scania Optimus", 70000)
     println(scania)
+    scania.carregar(55000)
+    scania.acelerar(60)
 
 
 
